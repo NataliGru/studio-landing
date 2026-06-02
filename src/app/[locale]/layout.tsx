@@ -1,4 +1,3 @@
-// eslint-disable-next-line simple-import-sort/imports
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';

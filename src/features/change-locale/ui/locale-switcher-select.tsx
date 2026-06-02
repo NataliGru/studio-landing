@@ -44,7 +44,7 @@ export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
     >
       <p className='sr-only'>{label}</p>
       <select
-        className='inline-flex w-full appearance-none rounded-xl bg-transparent py-3 pl-2 pr-6'
+        className='inline-flex w-full appearance-none rounded-xl bg-transparent py-3 pr-6 pl-2'
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
@@ -53,7 +53,7 @@ export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
       </select>
       <span
         aria-hidden='true'
-        className='pointer-events-none absolute right-2 top-[8px]'
+        className='pointer-events-none absolute top-[8px] right-2'
       >
         v
       </span>
