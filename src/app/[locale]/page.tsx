@@ -1,9 +1,5 @@
-import ChatParallax from '@/shared/components/chatParallax';
+import { SmoothScrollLensis } from '@/shared/components/smoothScrollLensis';
 
 export default function HomeLocalized() {
-  return (
-    <main className='relative'>
-      <ChatParallax />
-    </main>
-  );
+  return <SmoothScrollLensis />;
 }
