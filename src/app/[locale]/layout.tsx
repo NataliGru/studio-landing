@@ -1,11 +1,20 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Inter } from 'next/font/google';
+import { Montserrat_Alternates, Roboto_Serif } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 import { ProvidersLayout } from '@/providers';
 import { cn, isAppLocale, routing } from '@/shared';
 
-const inter = Inter({ subsets: ['latin'] });
+const robotoSerif = Roboto_Serif({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-roboto-serif',
+});
+
+const montserratAlternates = Montserrat_Alternates({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-montserrat-alternates',
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -44,7 +53,14 @@ export default async function LocaleLayout({
 
   return (
     <html className='h-full' lang={locale}>
-      <body className={cn(inter.className, 'flex h-full flex-col')}>
+      <body
+        className={cn(
+          montserratAlternates.className,
+          robotoSerif.variable,
+          montserratAlternates.variable,
+          'flex h-full flex-col',
+        )}
+      >
         <ProvidersLayout>{children}</ProvidersLayout>
       </body>
     </html>
