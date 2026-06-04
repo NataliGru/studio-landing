@@ -1,5 +1,5 @@
-import { SmoothScrollLensis } from '@/shared/components/smoothScrollLensis';
+import { SmoothScrollLenis } from '@/shared/components/smoothScrollLensis';
 
 export default function HomeLocalized() {
-  return <SmoothScrollLensis />;
+  return <SmoothScrollLenis />;
 }
