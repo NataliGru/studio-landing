@@ -26,6 +26,8 @@ type ParallaxSectionProps = {
   contentClassName?: string;
   height?: number;
   withBottomGradient?: boolean;
+  opacityItemsRange?: [number, number];
+  scaleItemsRange?: [number, number];
 };
 
 export const ParallaxSection = ({
@@ -37,6 +39,8 @@ export const ParallaxSection = ({
   contentClassName = 'relative z-20 mx-auto max-w-5xl px-4 pt-[200px]',
   height = SECTION_HEIGHT,
   withBottomGradient = true,
+  opacityItemsRange,
+  scaleItemsRange,
 }: ParallaxSectionProps) => {
   const sectionRef = useRef<HTMLElement | null>(null);
 
@@ -63,6 +67,8 @@ export const ParallaxSection = ({
             start={item.start}
             end={item.end}
             className={item.className}
+            opacityRange={opacityItemsRange}
+            scaleRange={scaleItemsRange}
           >
             {item.content}
           </ParallaxBox>

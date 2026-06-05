@@ -1,11 +1,5 @@
-import { ThemeToggle } from '@/features';
-import { SmoothScrollLenis } from '@/shared/components/smoothScrollLensis';
+import { HomePage } from '@/views';
 
 export default function HomeLocalized() {
-  return (
-    <>
-      <ThemeToggle />
-      <SmoothScrollLenis />
-    </>
-  );
+  return <HomePage />;
 }
