@@ -1,7 +1,8 @@
 import { ThemeToggle } from '@/features';
 
 import { GuideList } from '../guideList';
-import { HeroParallax } from '../heroParallax';
+import { HeroParallaxDesktop } from '../heroParallaxDesktop';
+import { HeroParallaxMobile } from '../heroParallaxMobile';
 
 export function HomePage() {
   return (
@@ -9,8 +10,17 @@ export function HomePage() {
       <div className='fixed top-6 right-6 z-50'>
         <ThemeToggle />
       </div>
-      <HeroParallax />
+
+      <div className='sm:hidden'>
+        <HeroParallaxMobile />
+      </div>
+
+      <div className='hidden sm:block'>
+        <HeroParallaxDesktop />
+      </div>
+
       <GuideList />
+
       <div className='100dvh 100wv bg-black'></div>
     </main>
   );

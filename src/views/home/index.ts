@@ -1,3 +1,3 @@
 export * from './guideList';
-export * from './heroParallax';
+export * from './heroParallaxMobile';
 export * from './homePage';
