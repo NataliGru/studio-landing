@@ -1,8 +1,7 @@
 import { ThemeToggle } from '@/features';
 
 import { GuideList } from '../guideList';
-import { HeroParallaxDesktop } from '../heroParallaxDesktop';
-import { HeroParallaxMobile } from '../heroParallaxMobile';
+import { HeroParallax } from '../heroParallax';
 
 export function HomePage() {
   return (
@@ -11,13 +10,7 @@ export function HomePage() {
         <ThemeToggle />
       </div>
 
-      <div className='sm:hidden'>
-        <HeroParallaxMobile />
-      </div>
-
-      <div className='hidden sm:block'>
-        <HeroParallaxDesktop />
-      </div>
+      <HeroParallax />
 
       <GuideList />
 
