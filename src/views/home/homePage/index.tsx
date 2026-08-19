@@ -1,7 +1,6 @@
 import { ThemeToggle } from '@/features';
 
-import { GuideList } from '../guideList';
-import { HeroParallax } from '../heroParallax';
+import { HeroParallax, ArticlesList } from '@/widgets';
 
 export function HomePage() {
   return (
@@ -12,9 +11,9 @@ export function HomePage() {
 
       <HeroParallax />
 
-      <GuideList />
+      <ArticlesList />
 
-      <div className='100dvh 100wv bg-black'></div>
+      {/* <div className='100dvh 100wv bg-black'></div> */}
     </main>
   );
 }

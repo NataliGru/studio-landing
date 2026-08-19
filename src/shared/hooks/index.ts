@@ -1,1 +1,1 @@
-export * from './useScrollProgress';
+export * from './useMediaQuery'

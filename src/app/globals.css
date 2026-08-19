@@ -70,3 +70,8 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
+
+@theme {
+  --breakpoint-3xl: 137.5rem;
+  /* 2200px */
+}

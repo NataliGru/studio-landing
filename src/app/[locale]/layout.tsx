@@ -1,4 +1,8 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from 'next-intl/server';
 import { Montserrat_Alternates, Roboto_Serif } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
@@ -50,6 +54,7 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  const messages = await getMessages();
 
   return (
     <html className='h-full' lang={locale} suppressHydrationWarning>
@@ -61,7 +66,9 @@ export default async function LocaleLayout({
           'flex h-full flex-col',
         )}
       >
-        <ProvidersLayout locale={locale}>{children}</ProvidersLayout>
+        <ProvidersLayout locale={locale} messages={messages}>
+          {children}
+        </ProvidersLayout>
       </body>
     </html>
   );
