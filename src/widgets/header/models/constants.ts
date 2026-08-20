@@ -1,24 +1,26 @@
+import { Links } from '@/settings';
+
 export const HEADER_LINKS = {
   logo: {
     textKey: 'MNTN',
-    link: '/',
+    link: Links.index,
   },
   items: [
     {
       textKey: 'equipment',
-      link: 'equipment',
+      link: Links.equipment.index,
     },
     {
       textKey: 'aboutUs',
-      link: 'aboutUs',
+      link: Links.about,
     },
     {
       textKey: 'blog',
-      link: 'blog',
+      link: Links.blog.index,
     },
   ],
   account: {
     textKey: 'account',
-    link: 'account',
+    link: Links.account,
   },
 };

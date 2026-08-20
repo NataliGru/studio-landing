@@ -1,26 +1,28 @@
+import { Links } from '@/settings';
+
 export const MORE_BLOG_ITEMS = {
   title: 'blogTitle',
   areaLabelKey: 'blogAreaLabel',
   items: [
     {
       textKey: 'about',
-      link: 'about',
+      link: Links.about,
     },
     {
       textKey: 'contributors',
-      link: 'contributors',
+      link: Links.index,
     },
     {
       textKey: 'writeForUs',
-      link: 'writeForUs',
+      link: Links.index,
     },
     {
       textKey: 'contact',
-      link: 'contact',
+      link: Links.index,
     },
     {
       textKey: 'privacy',
-      link: 'privacy',
+      link: Links.index,
     },
   ],
 };
@@ -31,15 +33,15 @@ export const MORE_COMPANY_ITEMS = {
   items: [
     {
       textKey: 'team',
-      link: 'team',
+      link: Links.index,
     },
     {
       textKey: 'jobs',
-      link: 'jobs',
+      link: Links.index,
     },
     {
       textKey: 'press',
-      link: 'press',
+      link: Links.index,
     },
   ],
 };

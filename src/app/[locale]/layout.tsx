@@ -72,7 +72,7 @@ export default async function LocaleLayout({
           <div className='bg-background text-foreground flex min-h-dvh flex-col'>
             <HeaderNavigation />
 
-            <div className='relative z-0 flex-1'>{children}</div>
+            <div className='relative z-0 flex-1 pt-20'>{children}</div>
             <Footer />
           </div>
         </ProvidersLayout>
