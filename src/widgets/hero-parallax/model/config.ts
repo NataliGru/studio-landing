@@ -1,4 +1,4 @@
-import { Viewport } from "./types";
+import { Viewport } from './types';
 
 export const PARALLAX_IMAGE_SIZE = {
   width: 1920,
@@ -267,7 +267,7 @@ export const PARALLAX_CALIBRATION = {
   },
 
   title: {
-    start: 30,
+    start: 60,
 
     mobile: {
       maxWidth: 640,

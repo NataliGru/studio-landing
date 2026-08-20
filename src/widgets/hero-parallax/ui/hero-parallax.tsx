@@ -16,7 +16,10 @@ export function HeroParallax() {
     useHeroParallax();
 
   return (
-    <section ref={sectionRef} className='relative isolate h-[200dvh] [contain:paint]'>
+    <section
+      ref={sectionRef}
+      className='relative isolate h-[200dvh] contain-[paint]'
+    >
       {/* PINNED HERO */}
       <div className='bg-background sticky top-0 h-dvh w-full overflow-hidden'>
         {/* SKY */}
@@ -29,7 +32,8 @@ export function HeroParallax() {
           imgWidth={PARALLAX_IMAGE_SIZE.width}
           imgHeight={PARALLAX_IMAGE_SIZE.height}
           imgClassName='h-auto w-full max-w-none'
-          duration={1.4}
+          duration={0.4}
+          delay={0}
         />
 
         <ShadowBlock className='absolute inset-0 z-10' />

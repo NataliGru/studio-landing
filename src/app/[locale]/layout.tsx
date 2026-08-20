@@ -8,7 +8,8 @@ import { notFound } from 'next/navigation';
 
 import { ProvidersLayout } from '@/providers';
 import { cn, isAppLocale, routing } from '@/shared';
-import { Footer } from '@/widgets/footer';
+import { Footer } from '@/widgets';
+import { HeaderNavigation } from '@/widgets/header';
 
 const robotoSerif = Roboto_Serif({
   subsets: ['latin', 'cyrillic'],
@@ -69,8 +70,9 @@ export default async function LocaleLayout({
       >
         <ProvidersLayout locale={locale} messages={messages}>
           <div className='bg-background text-foreground flex min-h-dvh flex-col'>
-            <div className='relative z-0 flex-1'>{children}</div>
+            <HeaderNavigation />
 
+            <div className='relative z-0 flex-1'>{children}</div>
             <Footer />
           </div>
         </ProvidersLayout>
