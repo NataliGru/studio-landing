@@ -1,7 +1,7 @@
 import { getRequestConfig } from 'next-intl/server';
 
 import enMessages from '@/localization/en';
-import uaMessages from '@/localization/ua';
+import uaMessages from '@/localization/uk';
 
 import { routing } from './routing';
 
@@ -9,7 +9,7 @@ type Locale = (typeof routing.locales)[number];
 
 const messages = {
   en: enMessages,
-  ua: uaMessages,
+  uk: uaMessages,
 };
 
 function isLocale(locale: string | undefined): locale is Locale {

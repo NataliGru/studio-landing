@@ -75,3 +75,9 @@ h6 {
   --breakpoint-3xl: 137.5rem;
   /* 2200px */
 }
+
+@utility transition-all-300 {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}

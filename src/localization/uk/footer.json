@@ -3,12 +3,13 @@
   "blogTitle": "Більше в блозі",
   "companyTitle": "Більше про MNTN",
   "about": "Про MNTN",
+  "blogAreaLabel": "Список посилань про блог",
   "contributors": "Автори та редактори",
   "writeForUs": "Пишіть для нас",
   "contact": "Зв'язатися з нами",
   "privacy": "Політика конфіденційності",
+  "companyAreaLabel": "Список посилань про компанію",
   "team": "Команда",
   "jobs": "Вакансії",
-  "press": "Преса",
-  "copyright": "© 2023 MNTN, Inc. Умови використання та конфіденційність"
+  "press": "Преса"
 }

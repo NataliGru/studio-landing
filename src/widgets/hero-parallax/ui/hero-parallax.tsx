@@ -16,7 +16,7 @@ export function HeroParallax() {
     useHeroParallax();
 
   return (
-    <section ref={sectionRef} className='relative h-[200dvh]'>
+    <section ref={sectionRef} className='relative isolate h-[200dvh] [contain:paint]'>
       {/* PINNED HERO */}
       <div className='bg-background sticky top-0 h-dvh w-full overflow-hidden'>
         {/* SKY */}

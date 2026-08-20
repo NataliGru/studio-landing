@@ -3,12 +3,13 @@
   "blogTitle": "More on The Blog",
   "companyTitle": "More on MNTN",
   "about": "About MNTN",
+  "blogAreaLabel": "List of blog links",
   "contributors": "Contributors & Writers",
   "writeForUs": "Write For Us",
   "contact": "Contact Us",
   "privacy": "Privacy Policy",
+  "companyAreaLabel": "List of company links",
   "team": "The Team",
   "jobs": "Jobs",
-  "press": "Press",
-  "copyright": "Copyright 2023 MNTN, Inc. Terms & Privacy"
+  "press": "Press"
 }

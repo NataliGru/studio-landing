@@ -4,7 +4,7 @@ import { HeroParallax, ArticlesList } from '@/widgets';
 
 export function HomePage() {
   return (
-    <main className='bg-background text-foreground min-h-dvh'>
+    <main className='bg-background text-foreground relative isolate min-h-dvh'>
       <div className='fixed top-6 right-6 z-50'>
         <ThemeToggle />
       </div>
