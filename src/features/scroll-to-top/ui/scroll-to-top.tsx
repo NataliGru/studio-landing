@@ -38,7 +38,7 @@ export const ScrollToTop = () => {
         'fixed right-5 bottom-5 z-40 flex cursor-pointer flex-col items-center justify-center gap-1 p-1',
         'group',
         'border-accent rounded-full border backdrop-blur-xs backdrop-brightness-70',
-        '3xl:size-25 size-16 2xl:size-19',
+        '3xl:size-36 size-21 2xl:size-24',
       )}
       onClick={onScrollToTop}
       aria-label={t('scrollToTop')}
