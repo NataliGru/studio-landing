@@ -1,4 +1,4 @@
-import { ArticleItemKey, ArticleMediaSide } from "./types";
+import { ArticleItemKey, ArticleMediaSide } from './types';
 
 export const ENTER_RANGE = [0, 0.35];
 export const OPACITY_RANGE = [0, 0.1, 0.2];
@@ -6,6 +6,8 @@ export const OPACITY_RANGE = [0, 0.1, 0.2];
 export const DESCRIPTION_START_OPACITY = 0.15;
 export const DESCRIPTION_SPREAD = 0.8;
 export const DESCRIPTION_WORD_DURATION = 0.2;
+
+export const ARTICLES_LIST_ID = 'articles-list';
 
 export const ARTICLES: Array<{
   key: ArticleItemKey;

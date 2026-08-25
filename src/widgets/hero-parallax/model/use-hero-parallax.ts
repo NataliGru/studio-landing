@@ -1,12 +1,12 @@
-import { useScroll, useTransform } from "motion/react";
-import { useRef, useState, useEffect, useMemo } from "react";
-import { DEFAULT_VIEWPORT, getParallaxPositions } from "./calculate-parallax";
-import { Viewport } from "./types";
+import { useScroll, useTransform } from 'motion/react';
+import { useRef, useState, useEffect, useMemo } from 'react';
+import { DEFAULT_VIEWPORT, getParallaxPositions } from './calculate-parallax';
+import { Viewport } from './types';
+import { ARTICLES_LIST_ID } from '@/widgets/articles-list/model/constants';
 
 const ASSEMBLE_END = 0.6;
 
-
-export const useHeroParallax =  ()  => {
+export const useHeroParallax = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
 
   const [viewport, setViewport] = useState<Viewport>(DEFAULT_VIEWPORT);
@@ -15,6 +15,12 @@ export const useHeroParallax =  ()  => {
     target: sectionRef,
     offset: ['start start', 'end end'],
   });
+
+  const scrollToArticlesSection = () => {
+    document
+      .getElementById(ARTICLES_LIST_ID)
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   useEffect(() => {
     let frameId: number;
@@ -80,10 +86,11 @@ export const useHeroParallax =  ()  => {
   );
 
   return {
-    sectionRef, 
-    skyY, 
-    mountainsY, 
-    titleY, 
-    foregroundY
+    sectionRef,
+    skyY,
+    mountainsY,
+    titleY,
+    foregroundY,
+    scrollToArticlesSection,
   };
-}
+};

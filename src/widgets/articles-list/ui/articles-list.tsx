@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
 import clsx from 'clsx';
-import { ARTICLES } from '../model/constants';
+import { ARTICLES, ARTICLES_LIST_ID } from '../model/constants';
 import { ArticleItem } from './article-item';
 
 export async function ArticlesList() {
@@ -21,6 +21,7 @@ export async function ArticlesList() {
 
   return (
     <section
+      id={ARTICLES_LIST_ID}
       className={clsx(
         'bg-background text-foreground relative z-40',
         'px-10 py-24 sm:px-24 lg:py-32',

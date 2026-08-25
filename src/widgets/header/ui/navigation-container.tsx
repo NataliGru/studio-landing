@@ -22,10 +22,15 @@ export const NavigationContainer = ({ children }: NavigationContainerProps) => {
 
   return (
     <motion.header
-      className='fixed top-0 right-0 left-0 z-30'
+      className='fixed top-0 right-0 left-0 z-50'
       animate={{
         y: hidden ? -140 : 0,
         opacity: hidden ? 0 : 1,
+        translateY: '0%',
+      }}
+      initial={{
+        opacity: 0,
+        translateY: '-55%',
       }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >

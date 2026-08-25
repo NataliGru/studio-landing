@@ -30,6 +30,7 @@ export const ParallaxImageBlock = ({
         width={imgWidth}
         height={imgHeight}
         sizes='100vw'
+        loading='eager'
         className={imgClassName}
       />
     </ParallaxBlock>

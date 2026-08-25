@@ -67,6 +67,7 @@ export const ArticleItem = ({
           src={imageSrc}
           alt={imageAlt}
           fill
+          sizes='(min-width: 768px) 50vw, 100vw'
           className='pointer-events-none hidden h-auto w-full object-cover md:block'
         />
 

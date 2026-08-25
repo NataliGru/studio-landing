@@ -2,7 +2,11 @@
 
 import { ReactNode } from 'react';
 
-import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl';
+import {
+  AbstractIntlMessages,
+  NextIntlClientProvider,
+  Timezone,
+} from 'next-intl';
 import { ThemeProvider } from 'next-themes';
 import ReactLenis from 'lenis/react';
 
@@ -10,11 +14,21 @@ type Props = {
   children: ReactNode;
   locale: string;
   messages: AbstractIntlMessages;
+  timeZone: Timezone;
 };
 
-export function ProvidersLayout({ children, locale, messages }: Props) {
+export function ProvidersLayout({
+  children,
+  locale,
+  messages,
+  timeZone,
+}: Props) {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider
+      locale={locale}
+      messages={messages}
+      timeZone={timeZone}
+    >
       <ThemeProvider
         attribute='data-theme'
         defaultTheme='dark'

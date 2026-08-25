@@ -46,7 +46,7 @@ export const ParallaxBlock = ({
       {children}
 
       {showBottomShadow && (
-        <ShadowBlock className='absolute inset-x-0 bottom-0 z-40 h-[35dvh]' />
+        <ShadowBlock className='absolute inset-x-0 bottom-0 h-[35dvh]' />
       )}
     </motion.div>
   );

@@ -2,6 +2,7 @@ import {
   getMessages,
   getTranslations,
   setRequestLocale,
+  getTimeZone,
 } from 'next-intl/server';
 import { Montserrat_Alternates, Roboto_Serif } from 'next/font/google';
 import { notFound } from 'next/navigation';
@@ -10,6 +11,7 @@ import { ProvidersLayout } from '@/providers';
 import { cn, isAppLocale, routing } from '@/shared';
 import { Footer } from '@/widgets';
 import { HeaderNavigation } from '@/widgets/header';
+import { ScrollToTop } from '@/features/scroll-to-top';
 
 const robotoSerif = Roboto_Serif({
   subsets: ['latin', 'cyrillic'],
@@ -56,7 +58,9 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+
   const messages = await getMessages();
+  const timeZone = await getTimeZone();
 
   return (
     <html className='h-full' lang={locale} suppressHydrationWarning>
@@ -68,12 +72,17 @@ export default async function LocaleLayout({
           'flex h-full flex-col',
         )}
       >
-        <ProvidersLayout locale={locale} messages={messages}>
+        <ProvidersLayout
+          locale={locale}
+          messages={messages}
+          timeZone={timeZone}
+        >
           <div className='bg-background text-foreground flex min-h-dvh flex-col'>
             <HeaderNavigation />
-
-            <div className='relative z-0 flex-1 pt-20'>{children}</div>
+            <div className='relative z-0 flex-1'>{children}</div>
             <Footer />
+
+            <ScrollToTop />
           </div>
         </ProvidersLayout>
       </body>

@@ -94,8 +94,8 @@ export const MobileNavigation = () => {
             }}
             className={clsx(
               'fixed inset-0 z-40 h-dvh w-dvw',
-              'from-background to-background/70 bg-linear-to-b',
-              'backdrop-blur-xl backdrop-brightness-95',
+              // 'from-background to-background/30 bg-linear-to-b',
+              'backdrop-blur-md backdrop-brightness-95',
               'flex flex-col',
             )}
           >
