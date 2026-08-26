@@ -2,7 +2,7 @@
 
 import { ShadowBlock } from '@/shared';
 
-import { PARALLAX_IMAGE_SIZE, useHeroParallax } from '../model';
+import { PARALLAX_IMAGE_SIZE, SKY_IMAGE_SIZE, useHeroParallax } from '../model';
 import { ParallaxImageBlock } from './parallax-image-block';
 
 import { HeroTextBlock } from './hero-text-block';
@@ -26,23 +26,23 @@ export function HeroParallax() {
       <div className='bg-background sticky top-0 h-dvh w-full overflow-hidden'>
         {/* SKY */}
         <ParallaxImageBlock
-          imgSource='/parallaxHero/unsplash.png'
+          imgSource='/parallaxHero/clouds.webp'
           blockClassName='absolute z-0 h-[200dvh] w-full'
           yPosition={skyY}
           initialTranslateY='-5%'
           imgAlt='Clouds'
-          imgWidth={PARALLAX_IMAGE_SIZE.width}
-          imgHeight={PARALLAX_IMAGE_SIZE.height}
+          imgWidth={SKY_IMAGE_SIZE.width}
+          imgHeight={SKY_IMAGE_SIZE.height}
           imgClassName='h-auto w-full max-w-none'
           duration={0.4}
-          delay={0}
+          priority
         />
 
         <ShadowBlock className='absolute inset-0 z-10' />
 
         {/* MOUNTAINS */}
         <ParallaxImageBlock
-          imgSource='/parallaxHero/mountains1.png'
+          imgSource='/parallaxHero/mountains.webp'
           blockClassName='absolute z-10 w-full'
           yPosition={mountainsY}
           initialTranslateY='-7%'
@@ -50,7 +50,8 @@ export function HeroParallax() {
           imgWidth={PARALLAX_IMAGE_SIZE.width}
           imgHeight={PARALLAX_IMAGE_SIZE.height}
           imgClassName='h-auto w-full max-w-none'
-          duration={1.5}
+          duration={0.5}
+          loading='eager'
           showBottomShadow
         />
 
@@ -63,7 +64,7 @@ export function HeroParallax() {
 
         {/* FOREGROUND */}
         <ParallaxImageBlock
-          imgSource='/parallaxHero/man1.png'
+          imgSource='/parallaxHero/man.webp'
           blockClassName='absolute z-30 w-full pointer-events-none'
           yPosition={foregroundY}
           initialTranslateY='-8%'
@@ -71,7 +72,8 @@ export function HeroParallax() {
           imgWidth={PARALLAX_IMAGE_SIZE.width}
           imgHeight={PARALLAX_IMAGE_SIZE.height}
           imgClassName='h-auto w-full max-w-none'
-          duration={1.8}
+          duration={0.8}
+          loading='eager'
           showBottomShadow
         />
 

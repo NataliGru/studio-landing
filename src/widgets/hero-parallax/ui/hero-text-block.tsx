@@ -21,8 +21,7 @@ export const HeroTextBlock = ({
       blockClassName='text-foreground absolute z-20 flex w-full max-w-6xl 2xl:max-w-[80vw] flex-col gap-3 md:gap-5 px-6 sm:px-10 lg:px-12'
       yPosition={titleY}
       initialTranslateY='90%'
-      duration={1.8}
-      delay={0.2}
+      duration={0.8}
     >
       <motion.p
         className='text-accent 3xl:text-3xl flex items-center gap-4 text-[10px] font-bold tracking-[0.35em] uppercase xl:text-xl xl:leading-0'

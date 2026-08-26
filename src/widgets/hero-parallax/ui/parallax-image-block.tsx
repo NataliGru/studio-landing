@@ -12,6 +12,8 @@ type ParallaxImageBlockProps = Omit<
   imgWidth: number;
   imgHeight: number;
   imgClassName?: string;
+  priority?: boolean;
+  loading?: 'eager' | 'lazy';
 };
 
 export const ParallaxImageBlock = ({
@@ -20,6 +22,8 @@ export const ParallaxImageBlock = ({
   imgWidth,
   imgHeight,
   imgClassName,
+  priority,
+  loading,
   ...parallaxProps
 }: ParallaxImageBlockProps) => {
   return (
@@ -30,8 +34,9 @@ export const ParallaxImageBlock = ({
         width={imgWidth}
         height={imgHeight}
         sizes='100vw'
-        loading='eager'
+        priority={priority}
         className={imgClassName}
+        loading={loading}
       />
     </ParallaxBlock>
   );

@@ -135,6 +135,7 @@ export const MobileNavigation = () => {
                   <Link
                     href={item.link}
                     onClick={closeMenu}
+                    aria-label={t(item.textKey)}
                     className='block py-3'
                   >
                     {t(item.textKey)}
@@ -164,6 +165,7 @@ export const MobileNavigation = () => {
             >
               <Link
                 href={HEADER_LINKS.account.link}
+                aria-label={t(HEADER_LINKS.account.textKey)}
                 onClick={closeMenu}
                 className='flex items-center gap-3'
               >

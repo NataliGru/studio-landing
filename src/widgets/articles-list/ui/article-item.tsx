@@ -62,21 +62,17 @@ export const ArticleItem = ({
       viewport={{ once: false }}
     >
       {/* Image block */}
-      <motion.div className='relative flex-1' style={imageStyle}>
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          sizes='(min-width: 768px) 50vw, 100vw'
-          className='pointer-events-none hidden h-auto w-full object-cover md:block'
-        />
-
+      <motion.div
+        className='relative aspect-566/720 flex-1 md:self-start'
+        style={imageStyle}
+      >
         <Image
           src={imageSrc}
           alt={imageAlt}
           width={566}
           height={720}
-          className='pointer-events-none h-auto w-full object-cover md:hidden'
+          sizes='(min-width: 768px) 50vw, 100vw'
+          className='pointer-events-none aspect-566/720 h-auto w-full object-cover'
         />
 
         <ShadowBlock className='absolute inset-x-0 bottom-0 h-1/2' />

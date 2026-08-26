@@ -23,7 +23,11 @@ export const DesktopNavigation = async () => {
 
       <ul className='flex flex-row items-center gap-5 text-lg font-medium 2xl:text-2xl'>
         {HEADER_LINKS.items.map((item) => (
-          <li key={item.textKey} className='text-nowrap'>
+          <li
+            key={item.textKey}
+            className='text-nowrap'
+            aria-label={t(item.textKey)}
+          >
             <Link href={item.link} className='p-5'>
               {t(item.textKey)}
             </Link>
@@ -34,7 +38,11 @@ export const DesktopNavigation = async () => {
       <div className='flex flex-row items-center gap-10'>
         <ThemeToggle />
 
-        <Link href={HEADER_LINKS.account.link} className='p-5'>
+        <Link
+          href={HEADER_LINKS.account.link}
+          className='p-5'
+          aria-label={t(HEADER_LINKS.account.textKey)}
+        >
           <CircleUser
             className='size-6.5 lg:size-7.5 2xl:size-10'
             strokeWidth={2}

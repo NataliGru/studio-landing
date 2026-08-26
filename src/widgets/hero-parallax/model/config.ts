@@ -5,6 +5,11 @@ export const PARALLAX_IMAGE_SIZE = {
   height: 2070,
 } as const;
 
+export const SKY_IMAGE_SIZE = {
+  width: 2304,
+  height: 4096,
+} as const;
+
 export const DEFAULT_VIEWPORT: Viewport = {
   width: 1440,
   height: 900,

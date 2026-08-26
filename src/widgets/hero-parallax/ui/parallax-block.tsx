@@ -11,7 +11,6 @@ interface ParallaxBlockProps {
   showBottomShadow?: boolean;
   initialTranslateY?: string;
   duration: number;
-  delay?: number;
 }
 
 export const ParallaxBlock = ({
@@ -21,7 +20,6 @@ export const ParallaxBlock = ({
   showBottomShadow,
   initialTranslateY = '0%',
   duration,
-  delay,
 }: ParallaxBlockProps) => {
   return (
     <motion.div
@@ -39,7 +37,6 @@ export const ParallaxBlock = ({
       }}
       transition={{
         duration: duration,
-        delay,
         ease: [0.22, 1, 0.36, 1],
       }}
     >

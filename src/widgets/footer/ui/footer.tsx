@@ -9,9 +9,9 @@ export const Footer = async () => {
   return (
     <footer
       className={clsx(
-        'flex flex-col gap-20 md:flex-row md:justify-between',
-        'bg-background text-foreground relative',
-        'px-10 py-24 sm:px-24 lg:py-32',
+        'relative flex flex-col gap-20 md:flex-row md:justify-between',
+        'bg-background text-foreground border-foreground/30 border-t',
+        'px-10 py-20 sm:px-24 lg:py-28',
       )}
     >
       <div className='flex flex-col gap-6'>
