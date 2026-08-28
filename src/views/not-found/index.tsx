@@ -1,7 +1,7 @@
 import { Links } from '@/settings';
+import { Link } from '@/shared';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export const NotFoundPage = async () => {
   const t = await getTranslations('notFound');

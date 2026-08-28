@@ -1,9 +1,8 @@
 'use client';
 
-import { ShadowBlock } from '@/shared';
+import { Link, ShadowBlock } from '@/shared';
 import clsx from 'clsx';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { motion } from 'motion/react';
 import { Fragment } from 'react';

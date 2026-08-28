@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import { NAVIGATION_LINKS } from '../models/constants';
 import { CircleUser } from 'lucide-react';
 import clsx from 'clsx';
+import { Link } from '@/shared';
 
 interface AccountLinkProps {
   label: string;

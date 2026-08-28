@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/shared';
 import { FooterListItem } from '../models/types';
 import { getTranslations } from 'next-intl/server';
 

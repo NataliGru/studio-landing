@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/shared';
 import { NAVIGATION_LINKS } from '../models/constants';
 import clsx from 'clsx';
 

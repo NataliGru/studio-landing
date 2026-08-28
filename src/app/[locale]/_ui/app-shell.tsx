@@ -2,6 +2,7 @@ import { ScrollToTop } from '@/features/scroll-to-top';
 import { Footer } from '@/widgets';
 import { HeaderNavigation } from '@/widgets/header';
 import { ReactNode } from 'react';
+import { ServiceWorkerRegistration } from './service-worker-registration';
 
 interface AppShellProps {
   children: ReactNode;
@@ -15,6 +16,7 @@ export const AppShell = ({ children }: AppShellProps) => {
       <Footer />
 
       <ScrollToTop />
+      <ServiceWorkerRegistration />
     </div>
   );
 };
