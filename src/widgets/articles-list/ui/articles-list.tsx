@@ -25,6 +25,7 @@ export async function ArticlesList() {
       className={clsx(
         'bg-background text-foreground relative z-40',
         'px-10 py-24 sm:px-24 lg:py-32',
+        'overflow-x-clip',
       )}
     >
       <div className='flex flex-col gap-25 lg:gap-50 2xl:gap-96'>

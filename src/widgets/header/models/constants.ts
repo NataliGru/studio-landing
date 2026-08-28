@@ -1,6 +1,6 @@
 import { Links } from '@/settings';
 
-export const HEADER_LINKS = {
+export const NAVIGATION_LINKS = {
   logo: {
     textKey: 'MNTN',
     link: Links.index,

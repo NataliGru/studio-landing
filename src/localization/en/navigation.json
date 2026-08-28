@@ -4,5 +4,7 @@
   "aboutUs": "About us",
   "blog": "Blog",
   "account": "Account",
-  "scrollToTop": "Scroll to top"
+  "scrollToTop": "Scroll to top",
+  "closeMenu": "Close menu",
+  "openMenu": "Open menu"
 }

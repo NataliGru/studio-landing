@@ -1,13 +1,12 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 
 import {
   AbstractIntlMessages,
   NextIntlClientProvider,
   Timezone,
 } from 'next-intl';
-import { ThemeProvider } from 'next-themes';
 import ReactLenis from 'lenis/react';
 
 type Props = {
@@ -23,20 +22,17 @@ export function ProvidersLayout({
   messages,
   timeZone,
 }: Props) {
+  useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+
   return (
     <NextIntlClientProvider
       locale={locale}
       messages={messages}
       timeZone={timeZone}
     >
-      <ThemeProvider
-        attribute='data-theme'
-        defaultTheme='dark'
-        disableTransitionOnChange={false}
-        enableSystem={false}
-      >
-        <ReactLenis root>{children}</ReactLenis>
-      </ThemeProvider>
+      <ReactLenis root>{children}</ReactLenis>
     </NextIntlClientProvider>
   );
 }

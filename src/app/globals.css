@@ -67,6 +67,7 @@ h6 {
 @theme {
   --breakpoint-3xl: 137.5rem;
   /* 2200px */
+
 }
 
 @utility transition-all-300 {
