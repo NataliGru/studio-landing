@@ -16,17 +16,17 @@ export const ARTICLES: Array<{
 }> = [
   {
     key: 'first',
-    imageSrc: '/photo/1.png',
+    imageSrc: '/articles-photo/1.png',
     imageSide: 'right',
   },
   {
     key: 'second',
-    imageSrc: '/photo/2.png',
+    imageSrc: '/articles-photo/2.png',
     imageSide: 'left',
   },
   {
     key: 'third',
-    imageSrc: '/photo/3.png',
+    imageSrc: '/articles-photo/3.png',
     imageSide: 'right',
   },
 ];

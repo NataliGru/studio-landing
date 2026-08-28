@@ -11,7 +11,7 @@ const OPEN_GRAPH_LOCALES: Record<AppLocale, string> = {
 export const createMetadata = async (locale: AppLocale) => {
   const t = await getTranslations({
     locale,
-    namespace: 'MainLayout',
+    namespace: 'mainLayout',
   });
 
   const currentPath = `/${locale}`;

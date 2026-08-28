@@ -1,6 +1,6 @@
 import { HeroParallax, ArticlesList } from '@/widgets';
 
-export function HomePage() {
+export const HomePage = () => {
   return (
     <main className='bg-background text-foreground relative isolate min-h-dvh'>
       <HeroParallax />
@@ -8,4 +8,4 @@ export function HomePage() {
       <ArticlesList />
     </main>
   );
-}
+};

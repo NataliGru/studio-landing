@@ -26,7 +26,7 @@ export function HeroParallax() {
       <div className='bg-background sticky top-0 h-dvh w-full overflow-hidden'>
         {/* SKY */}
         <ParallaxImageBlock
-          imgSource='/parallaxHero/clouds.webp'
+          imgSource='/parallax-images/clouds.webp'
           blockClassName='absolute z-0 h-[200dvh] w-full'
           yPosition={skyY}
           initialTranslateY='-5%'
@@ -42,7 +42,7 @@ export function HeroParallax() {
 
         {/* MOUNTAINS */}
         <ParallaxImageBlock
-          imgSource='/parallaxHero/mountains.webp'
+          imgSource='/parallax-images/mountains.webp'
           blockClassName='absolute z-10 w-full'
           yPosition={mountainsY}
           initialTranslateY='-7%'
@@ -64,7 +64,7 @@ export function HeroParallax() {
 
         {/* FOREGROUND */}
         <ParallaxImageBlock
-          imgSource='/parallaxHero/man.webp'
+          imgSource='/parallax-images/man.webp'
           blockClassName='absolute z-30 w-full pointer-events-none'
           yPosition={foregroundY}
           initialTranslateY='-8%'
